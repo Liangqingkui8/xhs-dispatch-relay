@@ -4,6 +4,8 @@
 ![License](https://img.shields.io/badge/License-GPL--3.0-red)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
 ![RWP 协议](https://img.shields.io/badge/RWP%20Protocol-逆向-blueviolet)
+![Stars](https://img.shields.io/github/stars/Liangqingkui8/xhs-dispatch-relay?style=flat-square)
+![Forks](https://img.shields.io/github/forks/Liangqingkui8/xhs-dispatch-relay?style=flat-square)
 
 **[English](README_EN.md) · [中文](README.md)**
 
