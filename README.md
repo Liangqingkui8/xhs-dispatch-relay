@@ -345,7 +345,12 @@ DeepSeek 的 PoW challenge 必须用 Node WASM 解（`pow_solver.js` + `sha3_was
 
 如果这个项目帮到你，欢迎给作者留个 **star**，或者请作者喝杯咖啡。
 
-支持方式：微信 / 支付宝收款码，或 [爱发电](<afdian-link>)。（收款码 / 链接待作者补充）
+支持方式：微信 / 支付宝收款码，扫一下，请作者喝杯咖啡。
+
+<p>
+<img src="assets/wechat.png" alt="微信收款码" width="200">
+<img src="assets/alipay.png" alt="支付宝收款码" width="200">
+</p>
 
 ---
 

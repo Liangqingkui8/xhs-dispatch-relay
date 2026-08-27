@@ -345,7 +345,12 @@ The accounts are yours; the risk is theirs. You're an adult — you handle the f
 
 If this project helped you, leave the author a **star** — or buy them a coffee.
 
-Ways to support: WeChat / Alipay payment QR, or [Aifadian](<afdian-link>). (QR code / link to be added by the author.)
+Ways to support: WeChat / Alipay payment QR — scan one and buy the author a coffee.
+
+<p>
+<img src="assets/wechat.png" alt="WeChat QR" width="200">
+<img src="assets/alipay.png" alt="Alipay QR" width="200">
+</p>
 
 ---
 
