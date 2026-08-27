@@ -1,5 +1,5 @@
 # encoding: utf-8
-"""薯管家 — 引擎层：封装 xhs-api 私信能力 + 账号×IP出口
+"""xhs-dispatch-relay — 引擎层：封装 xhs-api 私信能力 + 账号×IP出口
 
 依赖 xhs-api（npm 全局装），通过 sys.path 注入源码目录 import Python SDK。
 每个 XhsAccount = 一个小红书账号，绑 cookie + 可选 IP 出口代理。

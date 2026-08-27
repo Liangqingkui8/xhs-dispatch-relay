@@ -2,7 +2,7 @@
 """IP 出口池：账号 × 出口 映射。
 
 一期：出口绑定在账号配置的 proxy 字段（accounts.json），这里只做出口格式归一 + 分配辅助。
-二期：接肉鸡 frpc 出口（见 1688-new-jumpbox-deploy），做出口健康检查 + 自动切换。
+二期：接更多出口源，做出口健康检查 + 自动切换。
 """
 from typing import Dict, List, Optional
 

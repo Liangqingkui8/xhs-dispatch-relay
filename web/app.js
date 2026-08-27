@@ -1,4 +1,4 @@
-// 薯管家 — 前端：账号卡片 + 右键菜单 + 私信弹窗 + WS 实时推流
+// xhs-dispatch-relay — 前端：账号卡片 + 右键菜单 + 私信弹窗 + WS 实时推流
 let accounts = [];
 const grid = document.getElementById('grid');
 const ctxMenu = document.getElementById('ctx-menu');

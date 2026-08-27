@@ -7,7 +7,7 @@ from typing import Callable, Dict, List
 from .models import Event
 from .auto_reply import AutoReply
 
-# 轮询间隔（秒）：低频 + 随机 jitter，规避风控
+# 轮询间隔（秒）：低频 + 随机 jitter，避免高频请求被限流
 POLL_MIN = 3.0
 POLL_MAX = 5.0
 

@@ -1,5 +1,5 @@
 # encoding: utf-8
-"""薯管家 — FastAPI 入口：账号 API + WS 推流 + 静态 WebUI"""
+"""xhs-dispatch-relay — FastAPI 入口：账号 API + WS 推流 + 静态 WebUI"""
 import asyncio
 import json
 import os
