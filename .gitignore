@@ -1,0 +1,12 @@
+# 运行态资产：绝不提交真实凭据
+data/*.json
+!data/*.example.json
+
+# 日志（含运行时敏感信息）
+*.log
+
+# 环境与缓存
+__pycache__/
+*.pyc
+.venv/
+node_modules/

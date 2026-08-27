@@ -1,0 +1,3 @@
+# 后端依赖（装进 xhs-api 自举的 venv，因为要 import xhs_api SDK）
+fastapi
+uvicorn[standard]

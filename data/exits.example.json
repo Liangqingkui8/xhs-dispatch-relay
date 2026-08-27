@@ -1,0 +1,17 @@
+{
+  "jumpbox": {
+    "ip": "",
+    "user": "",
+    "pass": ""
+  },
+  "exits": [
+    {
+      "name": "exit-1",
+      "proxy_port": 0,
+      "cloud_ip": "",
+      "cloud_ssh_port": 0,
+      "cloud_user": "root",
+      "cloud_pass": ""
+    }
+  ]
+}
