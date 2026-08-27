@@ -356,10 +356,8 @@ If this project helped you, leave the author a **star** — or buy them a coffee
 
 Ways to support: WeChat / Alipay payment QR — scan one and buy the author a coffee.
 
-<p>
-<img src="assets/wechat.jpg" alt="WeChat QR" width="200">
-<img src="assets/alipay.jpg" alt="Alipay QR" width="200">
-</p>
+- [WeChat QR](assets/wechat.jpg)
+- [Alipay QR](assets/alipay.jpg)
 
 ---
 
