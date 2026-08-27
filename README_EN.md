@@ -37,7 +37,10 @@ This project is provided **for personal study and academic research only**. The 
 
 ## 🖼️ Preview
 
-<img src="assets/screenshot/main.png" alt="Console UI" width="820">
+<p>
+<img src="assets/screenshot/main.png" alt="Account management" width="420">
+<img src="assets/screenshot/data.png" alt="Data overview" width="420">
+</p>
 
 ---
 

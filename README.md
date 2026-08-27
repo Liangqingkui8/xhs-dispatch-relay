@@ -37,7 +37,10 @@ xhs-dispatch-relay 是管理你名下多个账号的一个项目：统一收件�
 
 ## 🖼️ 界面预览
 
-<img src="assets/screenshot/main.png" alt="控制台界面" width="820">
+<p>
+<img src="assets/screenshot/main.png" alt="账号管理" width="420">
+<img src="assets/screenshot/data.png" alt="数据总览" width="420">
+</p>
 
 ---
 
