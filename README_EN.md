@@ -341,6 +341,36 @@ The accounts are yours; the risk is theirs. You're an adult — you handle the f
 
 ---
 
+## 💝 Sponsor
+
+If this project helped you, leave the author a **star** — or buy them a coffee.
+
+Ways to support: WeChat / Alipay payment QR, or [Aifadian](<afdian-link>). (QR code / link to be added by the author.)
+
+---
+
+## 🤝 Contact & Contributing
+
+- **Report bugs / suggest features**: open a [GitHub Issue](https://github.com/Liangqingkui8/xhs-dispatch-relay/issues)
+- **Contribute code**: Fork → change → open a PR. Any improvement is welcome.
+- **Contact the author**: via GitHub Issues, or `<your-email@example.com>`
+
+### FAQ
+
+**Q: What environment is needed?**
+Python 3.10 + Windows, plus the xhs-api SDK (point the `XHS_SDK_DIR` env var at its install dir). No extra frontend dependencies.
+
+**Q: Are account cookies safe?**
+Stored only in local `data/`, never in version control. Cloud server / account / exit credentials are all injected via environment variables, never hardcoded.
+
+**Q: Does it support Docker / server deployment?**
+Currently a Windows-local web service. The scheduling skeleton is platform-agnostic; moving it to a server needs your own adaptation.
+
+**Q: Login failed / API errors?**
+Check the "Pitfalls & Lessons" section and the runtime logs first; if it persists, open an Issue with the error message and reproduction steps.
+
+---
+
 ## 📜 License
 
 [GPL-3.0](LICENSE) — free software. Redistribution must retain the author's attribution and the repository link.

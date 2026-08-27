@@ -341,6 +341,36 @@ DeepSeek 的 PoW challenge 必须用 Node WASM 解（`pow_solver.js` + `sha3_was
 
 ---
 
+## 💝 赞助
+
+如果这个项目帮到你，欢迎给作者留个 **star**，或者请作者喝杯咖啡。
+
+支持方式：微信 / 支付宝收款码，或 [爱发电](<afdian-link>)。（收款码 / 链接待作者补充）
+
+---
+
+## 🤝 联系与贡献
+
+- **报 bug / 提建议**：开一个 [GitHub Issue](https://github.com/Liangqingkui8/xhs-dispatch-relay/issues)
+- **贡献代码**：Fork → 改 → 提 PR，欢迎任何改进
+- **联系作者**：GitHub Issues 走起，或邮箱 `<your-email@example.com>`
+
+### 常见问题
+
+**Q：需要什么环境？**
+Python 3.10 + Windows，并安装 xhs-api SDK（用 `XHS_SDK_DIR` 环境变量指向其安装目录）。前端无需额外依赖。
+
+**Q：账号 cookie 安全吗？**
+只存本地 `data/`，不进版本库。云服务器 / 账号 / 出口凭据全部走环境变量注入，不硬编码在代码里。
+
+**Q：支持 Docker / 服务器部署吗？**
+目前是 Windows 本地 Web 服务。调度骨架是平台无关的，要搬上服务器得自行适配。
+
+**Q：登录失败 / 接口报错怎么办？**
+先看「坑与教训」和运行日志；还不行就开一个 Issue，附上错误信息和复现步骤。
+
+---
+
 ## 📜 协议
 
 [GPL-3.0](LICENSE) — 自由软件，转载 / 再分发必须保留作者署名与仓库链接。
