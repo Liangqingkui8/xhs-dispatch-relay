@@ -35,6 +35,10 @@ xhs-dispatch-relay 是管理你名下多个账号的一个项目：统一收件�
 - **数据总览** — KPI 卡 + 笔记明细，一个面板看全
 - **扫码登录** — 浏览器扫码，cookie 自动落库，换号不折腾
 
+## 🖼️ 界面预览
+
+<img src="assets/screenshot/main.png" alt="控制台界面" width="820">
+
 ---
 
 ## 🚀 快速上手

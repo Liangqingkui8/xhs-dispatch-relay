@@ -417,6 +417,12 @@ async def ws_endpoint(ws: WebSocket):
 app.mount("/web", StaticFiles(directory=WEB_DIR), name="web")
 
 
+# file:// 直接打开 web/index.html 时 script 用相对路径；http 访问根路径时兜底
+@app.get("/app.js")
+async def app_js():
+    return FileResponse(os.path.join(WEB_DIR, "app.js"))
+
+
 @app.get("/")
 async def index():
     return FileResponse(os.path.join(WEB_DIR, "index.html"))

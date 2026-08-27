@@ -1,4 +1,21 @@
 // xhs-dispatch-relay — 前端：账号卡片 + 右键菜单 + 私信弹窗 + WS 实时推流
+// 演示模式：file:// 直接打开 或 URL 加 ?demo=1 时用模拟数据渲染，便于界面截图（不触碰真实数据）
+const DEMO = location.protocol === 'file:' || new URLSearchParams(location.search).has('demo');
+const DEMO_ACCOUNTS = [
+  { name: '母婴号A', nickname: '元气宝妈', user_id: 'demo_01', proxy: '出口-01', status: 'online',  unread: 3,  reply_text: '亲，看到啦，稍后回你~' },
+  { name: '穿搭号B', nickname: '今日穿搭', user_id: 'demo_02', proxy: '出口-02', status: 'online',  unread: 0,  reply_text: '' },
+  { name: '数码号C', nickname: '科技生活', user_id: 'demo_03', proxy: '出口-03', status: 'online',  unread: 7,  reply_text: '在的，直说～' },
+  { name: '手作号D', nickname: '手工日常', user_id: 'demo_04', proxy: '出口-04', status: 'rate_limited', unread: 1, reply_text: '' },
+  { name: '探店号E', nickname: '吃遍全城', user_id: 'demo_05', proxy: '出口-05', status: 'online',  unread: 12, reply_text: '来啦来啦，直接说～' },
+];
+const DEMO_NOTES = [
+  { account: '母婴号A', title: '新手妈妈必备的5个辅食神器', cover_url: '', read_count: 12400, like_count: 856, fav_count: 234, comment_count: 45, share_count: 12, post_time: 1755240000000 },
+  { account: '穿搭号B', title: '入秋第一套通勤穿搭', cover_url: '', read_count: 8900, like_count: 512, fav_count: 98, comment_count: 32, share_count: 8, post_time: 1755150000000 },
+  { account: '数码号C', title: '3000元档手机横评', cover_url: '', read_count: 15600, like_count: 1204, fav_count: 356, comment_count: 89, share_count: 45, post_time: 1755060000000 },
+  { account: '手作号D', title: '旧毛衣改造成的收纳盒', cover_url: '', read_count: 5200, like_count: 342, fav_count: 121, comment_count: 18, share_count: 6, post_time: 1754970000000 },
+  { account: '探店号E', title: '这家苍蝇馆子真的绝了', cover_url: '', read_count: 7300, like_count: 498, fav_count: 87, comment_count: 29, share_count: 11, post_time: 1754880000000 },
+  { account: '母婴号A', title: '宝宝湿疹护理避坑指南', cover_url: '', read_count: 9800, like_count: 623, fav_count: 178, comment_count: 51, share_count: 15, post_time: 1754790000000 },
+];
 let accounts = [];
 const grid = document.getElementById('grid');
 const ctxMenu = document.getElementById('ctx-menu');
@@ -9,12 +26,11 @@ const STATUS_TEXT = { online: '在线', offline: '离线', rate_limited: '限流
 // ---------- 账号卡片 ----------
 async function loadAccounts() {
   try {
-    const res = await fetch('/api/accounts');
-    accounts = await res.json();
+    accounts = DEMO ? DEMO_ACCOUNTS.slice() : await (await fetch('/api/accounts')).json();
     accounts.forEach(a => { unreadCache[a.name] = a.unread || 0; });
     render();
   } catch (e) {
-    grid.innerHTML = '<div class="empty">后端未启动或账号为空</div>';
+    if (!DEMO) grid.innerHTML = '<div class="empty">后端未启动或账号为空</div>';
   }
 }
 
@@ -844,8 +860,7 @@ async function loadDataAll() {
   const table = document.getElementById('data-table');
   kpiRow.innerHTML = '<div class="empty" style="grid-column:1/-1">加载中…</div>';
   try {
-    const res = await fetch('/api/note_analysis_all');
-    const rows = await res.json();
+    const rows = DEMO ? DEMO_NOTES : await (await fetch('/api/note_analysis_all')).json();
     if (!rows || !rows.length) {
       kpiRow.innerHTML = '<div class="empty" style="grid-column:1/-1">暂无笔记数据</div>';
       table.innerHTML = '';

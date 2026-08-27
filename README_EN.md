@@ -35,6 +35,10 @@ This project is provided **for personal study and academic research only**. The 
 - **Data overview** — KPI cards + note detail table in one view.
 - **QR login** — browser scans the QR, cookie saved automatically, swapping accounts is painless.
 
+## 🖼️ Preview
+
+<img src="assets/screenshot/main.png" alt="Console UI" width="820">
+
 ---
 
 ## 🚀 Quick Start
