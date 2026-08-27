@@ -53,10 +53,12 @@ cp data/accounts.example.json data/accounts.json
 cp data/exits.example.json data/exits.json
 
 # 2. Start the service
-python app/main.py
+python -m uvicorn app.main:app --port 8000
 ```
 
-Open the console in your browser, scan the QR, and go.
+Open http://127.0.0.1:8000 in your browser, scan the QR, and go.
+
+> Just want a look without setting up an environment? Double-click `web/index.html` — it ships with demo data and needs no backend.
 
 ---
 

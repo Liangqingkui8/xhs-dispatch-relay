@@ -53,10 +53,12 @@ cp data/accounts.example.json data/accounts.json
 cp data/exits.example.json data/exits.json
 
 # 2. 起服务
-python app/main.py
+python -m uvicorn app.main:app --port 8000
 ```
 
-浏览器打开控制台，扫码登录，开干。
+浏览器打开 http://127.0.0.1:8000 ，扫码登录，开干。
+
+> 只想先看界面、不想配环境？直接双击 `web/index.html`，自带演示数据，无需后端。
 
 ---
 
