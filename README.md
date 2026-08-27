@@ -5,6 +5,8 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
 ![RWP 协议](https://img.shields.io/badge/RWP%20Protocol-逆向-blueviolet)
 
+**[English](README_EN.md) · [中文](README.md)**
+
 **名下账号，一把梭。**
 
 xhs-dispatch-relay 是管理你名下多个账号的一个项目：统一收件箱收发私信、关键词自动回复、多账号多出口调度、内容浏览、写操作、发布、数据总览，一个面板全干了。开一个号是养，开十个号是管，中间那摊脏活累活，它替你扛。
