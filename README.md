@@ -364,7 +364,7 @@ DeepSeek 的 PoW challenge 必须用 Node WASM 解（`pow_solver.js` + `sha3_was
 
 - **报 bug / 提建议**：开一个 [GitHub Issue](https://github.com/Liangqingkui8/xhs-dispatch-relay/issues)
 - **贡献代码**：Fork → 改 → 提 PR，欢迎任何改进
-- **联系作者**：GitHub Issues 走起，或邮箱 `<your-email@example.com>`
+- **联系作者**：GitHub Issues 走起，或邮箱 liangqingkui8@gmail.com
 
 ### 常见问题
 

@@ -364,7 +364,7 @@ Ways to support: WeChat / Alipay payment QR — scan one and buy the author a co
 
 - **Report bugs / suggest features**: open a [GitHub Issue](https://github.com/Liangqingkui8/xhs-dispatch-relay/issues)
 - **Contribute code**: Fork → change → open a PR. Any improvement is welcome.
-- **Contact the author**: via GitHub Issues, or `<your-email@example.com>`
+- **Contact the author**: via GitHub Issues, or liangqingkui8@gmail.com
 
 ### FAQ
 
