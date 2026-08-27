@@ -1,7 +1,7 @@
 # encoding: utf-8
 """扫码登录 — 小红书账号注册入口（playwright 可见浏览器 + 云号 http 代理出口）
 
-复用 1688 的 capture_login 思路，改成小红书：
+复用自研的登录采集思路，改成小红书：
   - 登录 URL = xhs 网页首页（未登录自动弹扫码）
   - 登录态金标准 = cookie 里 web_session + id_token 都非空
   - 出口 = http 代理（<user>:<pass>@<jumpbox-ip>:<port>）

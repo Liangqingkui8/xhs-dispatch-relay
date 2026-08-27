@@ -240,7 +240,7 @@ xhs-dispatch-relay/
 
 ## 七、DeepSeek 网页版逆向 + 号池
 
-> 把 DeepSeek 网页版（chat.deepseek.com）当**免费无限次**的算力池：补电话 + 出文案。纯 HTTP 全自动，零浏览器。
+> 把 DeepSeek 网页版（chat.deepseek.com）当**免费无限次**的算力池：出文案。纯 HTTP 全自动，零浏览器。
 
 ### 7.1 纯 HTTP 链路（核心秘密）
 
@@ -309,16 +309,7 @@ DeepSeek 的 PoW challenge 必须用 Node WASM 解（`pow_solver.js` + `sha3_was
 - `recolor.py` — 定位三个 CSS 变量换色 + 塞标题 + Playwright 截图(1080×1440 = 3:4)。5 配色：white_red / white_black / black_red / white_green / white_blue
 - `gen_post.py` — 手动链路：`ds_client.ask()` → `parse_deep()` → `parse_ds()` → recolor 出图 + 写 post.txt 留档
 
-## 九、关联逆向：1688 MTop（同源路线）
-
-同一条「curl_cffi chrome120」路线，复用账号×IP出口池：
-
-- **MTop JSON API**：游客态纯 HTTP，`getCompanyList` 工厂搜索（3000/词 + 直出工商全名 + 档位字段）
-- **RGV587 拦截**：curl_cffi `impersonate="chrome120"` 直接过，不用浏览器
-- **两坑**：缺 Origin/Referer 头 → 500；`context.request` dict→JSON 直接传会 ILLEGAL_ACCESS
-- **工商全名在 `shop.text` 非 `loginId`**（补电话转换率暴跌命门）
-
-## 十、坑与教训（高频命门）
+## 九、坑与教训（高频命门）
 
 1. **依赖升级会覆盖补丁**：私信引擎底层 ws_client.py 加的 socks5h + http 代理认证是改在依赖里的，升级后要重打补丁。
 2. **隐私默认值**：`creator.publish` 的 `privacy_type` 默认 1=私密，必须显式传 0 才是公开。
@@ -328,7 +319,7 @@ DeepSeek 的 PoW challenge 必须用 Node WASM 解（`pow_solver.js` + `sha3_was
 6. **同步阻塞**：`/api/login` 扫码最多 5min，必须 `asyncio.to_thread` 投线程池，否则 WS 事件循环被 playwright 卡死。
 7. **Windows GBK**：print 中文崩，跑前 `PYTHONIOENCODING=utf-8`。
 
-## 十一、待办
+## 十、待办
 
 - 视频发布
 - 一稿多号 + DeepSeek 改写去重
